@@ -1,0 +1,10 @@
+.composition__photo {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem black;
+          box-shadow: 0 1.5rem 4rem black;
+}
+
+.composition__photo {
+  width: 55%;
+}
+/*# sourceMappingURL=composition.css.map */

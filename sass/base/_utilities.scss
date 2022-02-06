@@ -1,0 +1,66 @@
+// Text Classes
+.center-text {
+	text-align: center;
+}
+
+// Spacing Classes
+.margin-bottom-big {
+	margin-bottom: 8rem;
+
+	@include respond(tab-port) {
+		margin-bottom: 5rem;
+	}
+}
+.margin-bottom-medium {
+	margin-bottom: 4rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 3rem !important;
+	}
+}
+.margin-bottom-small {
+	margin-bottom: 1.5rem;
+}
+.padding-right-small {
+	padding-right: 2rem;
+}
+.margin-top-big {
+	margin-top: 8rem;
+
+	@include respond(tab-port) {
+		margin-top: 5rem;
+	}
+}
+
+// Aligning classes
+.flexbox {
+	display: flex;
+	width: calc(30rem + 65vw);
+	margin: 0 auto;
+
+	@include respond(tab-port) {
+		flex-wrap: wrap;
+		justify-content: center;
+		width: calc(30rem + 55vw);
+	}
+	@include respond(phone) {
+		width: 100%;
+	}
+
+	.flex-item {
+		margin: 0 2rem;
+		@include respond(tab-port) {
+			margin: 2rem;
+			max-width: 50rem;
+		}
+	}
+	.flex-col-2 {
+		width: calc((100% - 4rem) / 2);
+		@include respond(tab-port) {
+			width: 100%;
+		}
+	}
+}
+.flex-center-x {
+	justify-content: center;
+}
